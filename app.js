@@ -11,6 +11,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 //Connect to MongoDB
+// MongoDB compass bata connect garna aayena/sikna alchi lagyo
+//aba MongoDB Atlas batai garna parcha ra kasari garne herna parcha
 mongoose.connect('mongodb://localhost:27017', {
     dbName: 'url-shortener',
     useNewUrlParser: true,
